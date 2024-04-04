@@ -42,4 +42,4 @@ def create_token():
         return jsonify({"msg": "email or password incorrect, user not found"}), 404
     
     access_token = create_access_token(identity=email)
-    return jsonify(accesss_token=access_token), 200
+    return jsonify(access_token=access_token), 200
